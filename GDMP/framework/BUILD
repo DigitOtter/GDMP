@@ -2,6 +2,7 @@ cc_library(
     name = "image",
     srcs = ["image.cc"],
     hdrs = ["image.h"],
+    copts = ["-fvisibility=hidden"],
     visibility = ["//visibility:public"],
     deps = [
         ":packet",
